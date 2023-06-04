@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  width: max-content;
+  margin-inline: auto;
+}
+
+.new-todo-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+}
+
+.new-todo__field {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  outline: none;
+
+  &.new-todo__field--error {
+    border-color: #dc3545;
+  }
+}
+
+.new-todo__input-error {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: .875em;
+  color: #dc3545
+}
+
+.new-todo__btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.new-todo__btn:hover,
+.new-todo__btn:focus-visible {
+  background-color: #f5f5f5;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.todos::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.todos::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.todos::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.todo__content {
+  display: flex;
+  align-items: center;
+}
+
+.todo__text {
+  font-size: 1.5rem;
+}
+
+.todo__checkbox {
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.todo__btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.todo__btn:hover,
+.todo__btn:focus-visible {
+  background-color: #f5f5f5;
+}
+
+
+.todos-footer__text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.todos-footer__btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.todos-footer__btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.todos-footer__btn:hover,
+.todos-footer__btn:focus-visible {
+  background-color: #f5f5f5;
+}

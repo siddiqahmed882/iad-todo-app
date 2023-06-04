@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+  <title>Todo App</title>
+</head>
+
+<body>
+  <main class="main">
+    <header class="header">
+      <h1 id="main-title">Todo App</h1>
+      <form class="new-todo-form">
+        <div class="form__group">
+          <input class="new-todo__field" placeholder="Enter your todo" />
+          <p class="new-todo__input-error"></p>
+        </div>
+        <button class="new-todo__btn" type="submit">Add</button>
+      </form>
+    </header>
+    <section class="todos">
+      <article class="todo">
+        <div class="todo__content">
+          <input type="checkbox" class="todo__checkbox" id="todo1" />
+          <label for="todo1" class="todo__text">Todo 1</label>
+        </div>
+        <button class="todo__btn">Delete</button>
+      </article>
+      <article class="todo">
+        <div class="todo__content">
+          <input type="checkbox" class="todo__checkbox" id="todo1" />
+          <label for="todo1" class="todo__text">Todo 2</label>
+        </div>
+        <button class="todo__btn">Delete</button>
+      </article>
+      <article class="todo">
+        <div class="todo__content">
+          <input type="checkbox" class="todo__checkbox" id="todo1" />
+          <label for="todo1" class="todo__text">Todo 3</label>
+        </div>
+        <button class="todo__btn">Delete</button>
+      </article>
+      <article class="todo">
+        <div class="todo__content">
+          <input type="checkbox" class="todo__checkbox" id="todo1" />
+          <label for="todo1" class="todo__text">Todo 4</label>
+        </div>
+        <button class="todo__btn">Delete</button>
+      </article>
+      <article class="todo">
+        <div class="todo__content">
+          <input type="checkbox" class="todo__checkbox" id="todo1" />
+          <label for="todo1" class="todo__text">Todo 5</label>
+        </div>
+        <button class="todo__btn">Delete</button>
+      </article>
+      <article class="todo">
+        <div class="todo__content">
+          <input type="checkbox" class="todo__checkbox" id="todo1" />
+          <label for="todo1" class="todo__text">Todo 6</label>
+        </div>
+        <button class="todo__btn">Delete</button>
+      </article>
+    </section>
+    <footer class="todos-footer">
+      <p class="todos-footer__text">You have <span class="todos-footer__count">0</span> todos left</p>
+      <div class="todos-footer__btns">
+        <button class="todos-footer__btn">Show All</button>
+        <button class="todos-footer__btn">Show Completed</button>
+        <button class="todos-footer__btn">Show Incomplete</button>
+        <button class="todos-footer__btn">Clear Completed</button>
+        <button class="todos-footer__btn">Clear All</button>
+      </div>
+    </footer>
+  </main>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
