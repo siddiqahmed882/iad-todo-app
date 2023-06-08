@@ -15,20 +15,13 @@
       <h1 id="main-title">Todo App</h1>
       <form class="new-todo-form">
         <div class="form__group">
-          <input class="new-todo__field" placeholder="Enter your todo" />
+          <input class="new-todo__field" name="title" placeholder="Enter your todo" />
           <p class="new-todo__input-error"></p>
         </div>
         <button class="new-todo__btn" type="submit">Add</button>
       </form>
     </header>
     <section class="todos">
-      <article class="todo">
-        <div class="todo__content">
-          <input type="checkbox" class="todo__checkbox" id="uniqueId" />
-          <label for="uniqueId" class="todo__text">Todo 1</label>
-        </div>
-        <button class="todo__btn">Delete</button>
-      </article>
     </section>
     <footer class="todos-footer">
       <p class="todos-footer__text">You have <span class="todos-footer__count">0</span> todos left</p>
@@ -43,7 +36,7 @@
   </main>
 
 
-  <script src="index.js"></script>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>

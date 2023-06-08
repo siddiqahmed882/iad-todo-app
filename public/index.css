@@ -72,8 +72,8 @@ h1 {
 }
 
 .todos {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  align-content: start;
   gap: 0.5rem;
   overflow-y: auto;
 }
